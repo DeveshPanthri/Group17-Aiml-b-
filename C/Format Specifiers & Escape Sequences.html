@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+               
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    <main>
+ <br><h1>Format Specifiers & Escape Sequences</h1><br> <p>Whenever we write a program in C, we have to use format specifiers to define the variable type in input and output and escape characters to format the output.</p> <br><h2>Format Specifiers</h2><br> <p>A format specifier in C programming is used to define the type of data we are printing to the output or accepting through the input. Through this, we tell the compiler what type of variable we are using for input while using scanf() or output while using printf(). Some examples of format specifiers are %d, %c, %f, etc.</p> <p>Here is a list of almost all format specifiers:</p> <table border="1"> <tr> <th>Format Specifier</th> <th>Type</th> </tr> <tr> <td>%c</td> <td>Used to print a character</td> </tr> <tr> <td>%d</td> <td>Used to print the signed integer</td> </tr> <tr> <td>%f</td> <td>Used to print the float values</td> </tr> <tr> <td>%i</td> <td>Used to print the unsigned integer</td> </tr> <tr> <td>%l</td> <td>Used to print the long integer</td> </tr> <tr> <td>%lf</td> <td>Used to print the double values</td> </tr> <tr> <td>%lu</td> <td>Used to print the unsigned integer or unsigned long integer</td> </tr> <tr> <td>%s</td> <td>Used to print the string</td> </tr> <tr> <td>%u</td> <td>Used to print the unsigned integer</td> </tr> </table> <p>One example is shown below:</p> <br> <pre> #include &lt;stdio.h>  <br>int main() <br> { char c[100] = "CodeWithHarry"; <br> printf("Printing a string, %s.", c); } </pre> <br> <p>Output:</p> <p>Printing a string, CodeWithHarry.</p> <p>The %s used in the printf() is a format specifier. This format specifier tells printf() to consider it as a string and print accordingly.</p> <br><h2>Escape Sequences</h2><br> <p>Many programming languages support the concept of Escape Sequences. An escape sequence is a sequence of characters that are used in formatting the output. They are not displayed on the screen while printing. Each character has its specific function. For example, \t is used to insert a tab, and \n is used to add a new line.</p> <p>Here’s the list of all escape sequences:</p> <table border="1"> <tr> <th>Escape Sequence</th> <th>Description</th> </tr> <tr> <td>\t</td> <td>Inserts a tab space</td> </tr> <tr> <td>\b</td> <td>Inserts a backspace</td> </tr> <tr> <td>\n</td> <td>Inserts a new line</td> </tr> <tr> <td>\r</td> <td>Inserts a carriage return</td> </tr> <tr> <td>\f</td> <td>Inserts a form feed</td> </tr> <tr> <td>\'</td> <td>Inserts a single quote character</td> </tr> <tr> <td>\"</td> <td>Inserts a double quote character</td> </tr> <tr> <td>\\</td> <td>Inserts a backslash character</td> </tr> </table> <p>One example is shown below:</p> <br> <pre> #include &lt;stdio.h &gt;<br>int main() <br>{ printf("Printing inside a double quotation, \"Code With Harry\""); } </pre> <br> <p>Output:</p> <p>Printing inside a double quotation, “Code With <br><br>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/XETsCR2bXJI" title="C Format Specifiers and Escape Sequences With Examples : C Tutorial In Hindi #9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</section>
+
+<div class="cn">
+    <button id="Previous"><a href="../C/Operators.html">Previous</a></button>
+    <button id="Next"><a href="../C/userInputOutput.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

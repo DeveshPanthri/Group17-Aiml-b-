@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+               
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+      <main>
+        <h1>C++ Operators</h1>
+         <section id="intro"> <p>Special symbols that are used to perform actions or operations are known as operators. They could be both unary or binary.</p> <p>For example, the symbol <code>+</code> is used to perform addition in C++ when put in between two numbers, so it is a binary operator. There are different types of operators. They are as follows:</p> </section> <section id="arithmetic-operators"> <h2>Arithmetic Operators</h2> <p>Arithmetic operators are used to perform mathematical operations such as addition, subtraction, etc. They could be both binary and unary. A few of the simple arithmetic operators are:</p> <table border="2"> <tr> <th>Operation</th> <th>Description</th> </tr> <tr> <td>a + b</td> <td>Adds a and b</td> </tr> <tr> <td>a - b</td> <td>Subtracts b from a</td> </tr> <tr> <td>a * b</td> <td>Multiplies a and b</td> </tr> <tr> <td>a / b</td> <td>Divides a by b</td> </tr> <tr> <td>a % b</td> <td>Modulus of a and b</td> </tr> <tr> <td>a++</td> <td>Post increments a by 1</td> </tr> <tr> <td>a--</td> <td>Post decrements a by 1</td> </tr> <tr> <td>++a</td> <td>Pre increments a by 1</td> </tr> <tr> <td>--a</td> <td>Pre decrements a by 1</td> </tr> </table> </section> <section id="relational-operators"> <h2>Relational Operators</h2> <p>Relational operators are used to check the relationship between two operands and to compare two or more numbers or even expressions in cases. The return type of a relational operator is a Boolean that is, either True or False (1 or 0).</p> <table border="2"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>&gt;</td> <td>Greater than</td> </tr> <tr> <td>&lt;</td> <td>Less than</td> </tr> <tr> <td>&gt;=</td> <td>Greater than or equal to</td> </tr> <tr> <td>&lt;=</td> <td>Less than or equal to</td> </tr> <tr> <td>==</td> <td>Is equal to</td> </tr> <tr> <td>!=</td> <td>Is not equal to</td> </tr> </table> </section> <section id="logical-operators"> <h2>Logical Operators</h2> <p>Logical Operators are used to check whether an expression is true or false. There are three logical operators i.e. AND, OR, and NOT. They can be used to compare Boolean values but are mostly used to compare expressions to see whether they are satisfying or not.</p> <p><strong>AND</strong>: it returns true when both operands are true or 1.</p> <p><strong>OR</strong>: it returns true when either operand is true or 1.</p> <p><strong>NOT</strong>: it is used to reverse the logical state of the operand and is true when the operand is false.</p> <table border="2"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>&amp;&amp;</td> <td>AND Operator</td> </tr> <tr> <td>||</td> <td>OR Operator</td> </tr> <tr> <td>!</td> <td>NOT Operator</td> </tr> </table> </section> <section id="bitwise-operators"> <h2>Bitwise Operators</h2> <p>A bitwise operator is used to perform operations at the bit level. To obtain the results, they convert our input values into binary format and then process them using whatever operator they are being used with.</p> <table border="2"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>&amp;</td> <td>Bitwise AND</td> </tr> <tr> <td>|</td> <td>Bitwise OR</td> </tr> <tr> <td>^</td> <td>Bitwise XOR</td> </tr> <tr> <td>~</td> <td>Bitwise Complement</td> </tr> <tr> <td>&gt;&gt;</td> <td>Shift Right Operator</td> </tr> <tr> <td>&lt;&lt;</td> <td>Shift Left Operator</td> </tr> </table> </section> <section id="assignment-operators"> <h2>Assignment Operators</h2> <p>Assignment operators are used to assign values. We will use them in almost every program we develop.</p> <pre><code>int a = 0; int b = 1; </code></pre> <p>Equal to (=) is the assignment operator here. It is assigning 0 to a and 1 to b in the above example.</p> <table border="2"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>=</td> <td>It assigns the right side operand value to the left side operand.</td> </tr> <tr> <td>+=</td> <td>It adds the right operand to the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>-=</td> <td>It subtracts the right operand from the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>*=</td> <td>It multiplies the right operand with the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>/=</td> <td>It divides the left operand with the right operand and assigns the result to the left operand.</td> </tr> </table> </section> <section id="operator-precedence"> <h2>Operator Precedence</h2> <p>It helps us determine the precedence of an operator over another while solving an expression. Consider an expression <code>a + b * c</code>. Now, since the multiplication operator's precedence is higher than the precedence of the addition operator, multiplication between <code>a</code> and <code>b</code> is done first and then the addition operation will be performed.</p> </section> <section id="operator-associativity"> <h2>Operator Associativity</h2> <p>It helps us to solve an expression when two or more operators having the same precedence come together in an expression. It helps us decide whether we should start solving the expression containing operators of the same precedence from left to right or from right to left.</p> <p>The table containing the operator precedence and operator associativity of all operators can be found here: <a href="https://en.cppreference.com/w/cpp/language/operator_precedence">C++ Operator Precedence - cppreference.com</a>.</p> </section> <br><br>
+         <iframe width="853" height="480" src="https://www.youtube.com/embed/7D5A5ZMKRWw?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" title="C++ Header files &amp; Operators | C++ Tutorials for Beginners #6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/i3a-G6Ebh9E?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" title="Constants, Manipulators &amp; Operator Precedence | C++ Tutorials for Beginners #8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    </main>
+</section>
+
+
+<div class="cn">
+    <button id="Previous"><a href="../C++/C++ Data Types & Constants.html">Previous</a></button>
+    <button id="Next"><a href="../C++/ManipulatorsandbasicInputOutput.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

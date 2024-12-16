@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    <main>
+    <br><h1>C Loops</h1><br> <p>In programming, we often have to perform an action, again and again, with little or no variations in the details each time they are executed. This need is met by a mechanism known as a loop.</p> <p>The versatility of the computer lies in its ability to perform the set of instructions repeatedly. This involves repeating some code in the program, either a specified number of times or until a particular condition is satisfied. Loop-controlled instructions are used to perform this repetitive operation efficiently ensuring the program doesn’t look redundant at the same time due to the repetitions.</p> <p>Following are the three types of loops in C programming:</p> <ul> <li>For loop</li> <li>While loop</li> <li>Do-while loop</li> </ul> <br><h2>Types of Loops</h2><br> <br><h3>Entry Controlled loops</h3><br> <p>In entry controlled loops, the test condition is evaluated before entering the loop body. The for Loop and the while Loop are examples of entry-controlled loops.</p> <br><h3>Exit Controlled Loops</h3><br> <p>In exit-controlled loops, the test condition is tested at the end of the loop. Regardless of whether the test condition is true or false, the loop body will execute at least once. The do-while loop is an example of an exit-controlled loop.</p> <br><br><h1>for Loop :</h1><br> <p>The "For" loop is used to repeat a specific piece of code in a program until a specific condition is satisfied. The for loop statement is very specialized. We use a for loop when we already know the number of iterations of that particular piece of code we wish to execute. Although, when we do not know about the number of iterations, we use a while loop.</p> <p>Here is the syntax of a for loop in C programming:</p> <br> <pre> for (initialise counter; test counter; increment / decrement counter) <br>{ //set of statements } </pre> <br> <p>Here,</p> <ul> <li>initialize counter: It will initialize the loop counter value. It is usually i=0.</li> <li>test counter: This is the test condition, which if found true, the loop continues, otherwise terminates.</li> <li>increment/decrement counter: Incrementing or decrementing the counter.</li> <li>set of statements: This is the body or the executable part of the for loop or the set of statements that has to repeat itself.</li> </ul> <p>One such example to demonstrate how a for loop works is:</p> <br> <pre> #include &lt;stdio.h> <br> int main() <br> { int num = 10; <br> int i; <br> for (i = 0; i < num; i++)<br> { printf("%d ", i); } return 0; } </pre> <br> <p>Output:</p> <p>0 1 2 3 4 5 6 7 8 9</p> <p>First, the initialization expression will initialize loop variables. The expression i=0 executes once when the loop starts. Then the condition i < num is checked. If the condition is true, then the statements inside the body of the loop are executed. After the statements inside the body are executed, the control of the program is transferred to the increment of the variable i by 1. The expression i++ modifies the loop variables. Iteratively, the condition i < num is evaluated again.</p> <p>If the condition is still evaluated true, the body of the loop will execute once again. The for loop terminates when i finally becomes less than num, therefore, making the condition i < num false. Just as if statement, we can have a for loop inside another for loop. This is known as a nested for loop. Similarly, while loop and do-while loop can also be nested.</p> <br><h1>while Loop :</h1><br> <p>A While loop is also called a pre-tested loop. A while loop allows a piece of code in a program to be executed multiple times, depending upon a given test condition which evaluates to either true or false. The while loop is mostly used in cases where the number of iterations is not known. If the number of iterations is known, then we could also use a for loop.</p> <p>The syntax for using a while loop:</p> <br> <pre> while (condition test) { // Set of statements } </pre> <br> <p>The body of a while loop can contain a single statement or a block of statements. The test condition may be any expression that should evaluate as either true or false. The loop iterates while the test condition evaluates to true. When the condition becomes false, the program control passes to the line immediately following the loop, which means, it terminates.</p> <p>One such example to demonstrate how a while loop works is:</p> <br> <pre> #include &lt;stdio.h> <br> int main()  <br>{ int i = 0; while (i &lt;= 5) <br>{ printf("%d ", i); i++; } <br> return 0; } </pre> <br> <p>Output:</p> <p>0 1 2 3 4 5</p> <br><h2>Properties of the while loop:</h2><br> <p>Following are some of the properties of the while loop:</p> <ul> <li>A conditional expression written in the brackets of while is used to check the condition. The Set of statements defined inside the while loop will execute until the given condition returns false.</li> <li>The condition will return 0 if it is true. The condition will be false if it returns any nonzero number.</li> <li>In the while loop, we cannot execute the loop until we do not specify the condition expression.</li> <li>It is possible to execute a while loop without any statements. This will give no error.</li> <li>We can have multiple conditional expressions in a while loop.</li> <li>Braces are optional if the loop body contains only one statement.</li> </ul> <br><h1>do-while Loop :</h1><br> <p>A do-while loop is a little different from a normal while loop. A do-while loop, unlike what happens in a while loop, executes the statements inside the body of the loop before checking the test condition.</p> <p>So even if a condition is false in the first place, the do-while loop would have already run once. A do-while loop is very much similar to a while loop, except for the fact that it is guaranteed to execute the body at least once.</p> <p>Unlike for and while loops, which test the loop condition first, then execute the code written inside the body of the loop, the do-while loop checks its condition at the end of the loop <br><br>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/wYvrBXUfFfw" title="Loops in One Shot | C Programming | Lecture 3 | Complete C Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</section>
+
+<div class="cn">
+    <button id="Previous"><a href="../C/ifels.html">Previous</a></button>
+    <button id="Next"><a href="../C/breakandcontinue.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

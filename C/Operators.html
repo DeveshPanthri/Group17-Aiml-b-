@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+               
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    <main>
+        <br><h1>C Operators</h1><br> <p>Special symbols that are used to perform actions or operations are known as operators. They could be both unary or binary.</p> <p>For example, the symbol asterisk (*) is used to perform multiplication in C, so it is an operator, and it is a binary operator.</p> <p>This section covers all types of operators.</p> <br><h2>Arithmetic Operators</h2><br> <p>Arithmetic operators are used to perform mathematical operations such as addition, subtraction, etc. A few of the simple arithmetic operators are:</p> <table border="1"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>+</td> <td>Addition</td> </tr> <tr> <td>-</td> <td>Subtraction</td> </tr> <tr> <td>*</td> <td>Multiplication</td> </tr> <tr> <td>/</td> <td>Division</td> </tr> <tr> <td>%</td> <td>Modulus</td> </tr> </table> <p>We all must already know their purpose and how they are used in simple mathematics. Their purpose and functionality are the same.</p> <p>Modulus (%) operator: this operator returns the remainder of two operands when they are been divided.</p> <br> <pre> #include <stdio.h> int main() { int x; x = 5 % 2; printf("remainder is %d", x); } </pre> <br> <p>Let’s see their implementation in C.</p> <br> <pre> #include <stdio.h> int main() { int a = 2; int b = 3; printf("a + b = %d\n", a + b); } </pre> <br> <p>Output:</p> <p>a + b = 5</p> <br><h2>Relational Operators</h2><br> <p>Relational operators are used for the comparison between two or more numbers or even expressions in cases. Same as Java, C also has six relational operators and their return value is of a Boolean type, either True or False (1 or 0).</p> <table border="1"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>></td> <td>Greater than</td> </tr> <tr> <td><</td> <td>Less than</td> </tr> <tr> <td>>=</td> <td>Greater than or equal to</td> </tr> <tr> <td><=</td> <td>Less than or equal to</td> </tr> <tr> <td>==</td> <td>Is equal to</td> </tr> <tr> <td>!=</td> <td>Is not equal to</td> </tr> </table> <br> <pre> #include <stdio.h> int main() { int a = 2; int b = 3; printf("a == b = %d\n", a == b); } </pre> <br> <p>Output:</p> <p>a == b = 0</p> <p>The output is 0, since a and b are not equal.</p> <br><h2>Logical Operators</h2><br> <p>There are three logical operators: AND, OR, and NOT. They can be used to compare Boolean values but are mostly used to compare conditions to see whether they are satisfying or not.</p> <ul> <li>AND: it returns true when both operators are true or 1.</li> <li>OR: it returns true when either operator is true or 1.</li> <li>NOT: it is used to reverse the logical state of the operand.</li> </ul> <table border="1"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>&&</td> <td>AND Operator</td> </tr> <tr> <td>||</td> <td>OR Operator</td> </tr> <tr> <td>!</td> <td>NOT Operator</td> </tr> </table> <br> <pre> #include <stdio.h> int main() { int a = 1; int b = 0; printf("a or b = %d\n", a || b); } </pre> <br> <p>Output:</p> <p>a or b = 1</p> <p>The output is 1, since either a or b is not equal to zero.</p> <br><h2>Bitwise Operators</h2><br> <p>A bitwise operator is used to perform operations at the bit level. To obtain the results, they convert our input values into binary format and then process them using whatever operator they are being used with.</p> <table border="1"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>&</td> <td>Bitwise AND</td> </tr> <tr> <td>|</td> <td>Bitwise OR</td> </tr> <tr> <td>^</td> <td>Bitwise XOR</td> </tr> <tr> <td>~</td> <td>Bitwise Complement</td> </tr> <tr> <td>>></td> <td>Shift Right Operator</td> </tr> <tr> <td><<</td> <td>Shift Left Operator</td> </tr> </table> <br> <pre> #include <stdio.h> int main() { int a = 2; //10 int b = 3; //11 printf("a xor b = %d\n", a ^ b); } </pre> <br> <p>Output:</p> <p>a xor b = 1</p> <p>The output is 1, since a xor b is 01 in binary, which is 1 in decimal.</p> <br><h2>Assignment Operators</h2><br> <p>Assignment operators are used to assign values. We will use them in almost every program we develop.</p> <br> <pre> int a = 0; int b = 1; </pre> <br> <p>Equal to (=) is the assignment operator here. It is assigning 0 to a and 1 to b in the above example.</p> <table border="1"> <tr> <th>Operator</th> <th>Description</th> </tr> <tr> <td>=</td> <td>It assigns the right side operand value to the left side operand.</td> </tr> <tr> <td>+=</td> <td>It adds the right operand to the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>-=</td> <td>It subtracts the right operand from the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>*=</td> <td>It multiplies the right operand with the left operand and assigns the result to the left operand.</td> </tr> <tr> <td>/=</td> <td>It divides the left operand with the right operand and assigns the result to the left operand.</td> </tr> </table> <br> <br>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/V4Wwuu05_t4" title="Operators In C: C Tutorial In Hindi #7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</section>
+
+<div class="cn">
+    <button id="Previous"><a href="../C/datatypesandconstants.html">Previous</a></button>
+    <button id="Next"><a href="../C/Format Specifiers & Escape Sequences.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

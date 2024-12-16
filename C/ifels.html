@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    <main>
+ <br><h1>C if...else statements</h1><br> <p>Sometimes, we wish to execute one set of instructions if a particular condition is met, and another set of instructions if it is not. This kind of situation is dealt with in C language using a decision control system.</p> <p>The condition for the if statement is always enclosed within a pair of parentheses. If the condition is true, then the set of statements following the if statement will execute. And if the condition evaluates to false, then the statement will not execute, instead, the program skips that enclosed part of the code.</p> <p>An expression in if statements is defined using relational operators. Comparing two values using relational operators allows us to determine whether they are equal, unequal, greater than, or less than.</p> <p>If we want to execute a particular code in some situation and its vice versa/opposite/or different code if that situation doesn’t occur, then if..else statements can be used. It's all dependent on the condition. If the condition returns a true value, the situation has occurred and the true part of the code will be executed. If the condition returns a false value, the false part of the code will be executed.</p> <table border="1"> <tr> <th>Condition</th> <th>Meaning</th> </tr> <tr> <td>a == b</td> <td>a is equal to b</td> </tr> <tr> <td>a != b</td> <td>a is not equal to b</td> </tr> <tr> <td>a < b</td> <td>a is less than b</td> </tr> <tr> <td>a > b</td> <td>a is greater than b</td> </tr> <tr> <td>a <= b</td> <td>a is less than or equal to b</td> </tr> <tr> <td>a >= b</td> <td>a is greater than or equal to b</td> </tr> </table> <p>The statement written in an if block will execute when the expression following if evaluates to true. But when the if block is followed by an else block, then when the condition written in the if block turns to be false, the set of statements in the else block will execute.</p> <p>Following is the syntax of if-else statements:</p> <br> <pre> if (condition) { statements; } else { statements; } </pre> <br> <p>One example where we could use the if-else statement is:</p> <br> <pre> #include &lt;stdio.h>  <br>int main()  <br>{ int num = 10; <br> if (num <= 10) <br>  { printf("Number is less than or equal to 10."); } <br> else { printf("Number is greater than 10."); }   <br>return 0; } </pre> <br> <p>Output:</p> <p>Number is less than or equal to 10.</p> <br><h2>Ladder if-else</h2><br> <p>If we want to check multiple conditions, then ladder if-else can be used. If the previous condition returns false, then only the next condition will be checked.</p> <p>Syntax:</p> <br> <pre> if (condition) { //statements }  <br>else if (condition) { //statements }  <br> else if (condition) { //statements } </pre> <br> <br><h2>Nested if-else</h2><br> <p>We can also write an entire if-else statement within either the body of another if statement or the body of an else statement. This is called the ‘nesting’ of ifs.</p> <br> <pre> if (condition) <br> { if (condition) { //statements } <br> else { //statements } }  <br>else { //statements } </pre> <br> <br>
+ <iframe width="853" height="480" src="https://www.youtube.com/embed/D0ACZ0uU_2g" title="If Else Control Statements In C: C Tutorial In Hindi #10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</section>
+
+<div class="cn">
+    <button id="Previous"><a href="../C/userInputOutput.html">Previous</a></button>
+    <button id="Next"><a href="../C/cloops.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

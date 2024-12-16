@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code | Coding Tutorials</title>
+    <link rel="stylesheet" href="../style.css/style1.css">
+    <link rel="stylesheet" href="../style.css/html.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <span><a href="../index.html"><h1 id="logo1">Coding</h1>
+                <h1>Tutorials</h1></a></span>
+               
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About us </a></li>
+                    <li><a href="../courses.html">Courses</a></li>
+                    <li><a href="../contactus.html">Contact us </a></li>
+                    <li><a href="../signup.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    <main>
+        <br><h1>Break Statement</h1><br> <p>Break statement is used to break the loop or switch case statements execution and brings the control to the next block of code after that particular loop or switch case it was used in.</p> <p>Break statements are used to bring the program control out of the loop it was encountered in.</p> <p>The break statement is used inside loops or switch statements in C Language.</p> <p>One such example to demonstrate how a break statement works is:</p> <br> <pre> #include &lt;stdio.h&gt;<br> int main() <br>{ int i = 0;<br> while (1) { if (i > 5) <br> { break; } <br>printf("%d ", i); i++; } <br> return 0; } </pre> <br> <p>Output:</p> <p>0 1 2 3 4 5</p> <p>Here, when i became 6, the break statement got executed and the program came out of the while loop.</p> <br><h1>Continue Statement</h1><br> <p>The continue statement is used inside loops in C Language. When a continue statement is encountered inside the loop, the control jumps to the beginning of the loop for the next iteration, skipping the execution of statements inside the body of the loop after the continue statement.</p> <p>It is used to bring the control to the next iteration of the loop.</p> <p>Typically, the continue statement skips some code inside the loop and lets the program move on with the next iteration.</p> <p>It is mainly used for a condition so that we can skip some lines of code for a particular condition.</p> <p>It forces the next iteration to follow in the loop unlike a break statement, which terminates the loop itself the moment it is encountered.</p> <p>One such example to demonstrate how a continue statement works is:</p> <br> <pre> #include &lt;stdio.h> <br> int main() { <br>for (int i = 0; i <= 10; i++)  <br> { if (i < 6) { continue; } <br> printf("%d ", i); }  <br>return 0; } </pre> <br> <p>Output:</p> <p>6 7 8 9 10</p> <p>Here, the continue statement was continuously executing while i remained less than 5. For all the other values of i, we got the print statement working.</p><br><br>
+        <iframe width="702" height="395" src="https://www.youtube.com/embed/yeH9DZlpbmM?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" title="Break and Continue Statements In C: C Tutorial In Hindi #16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</section>
+
+<div class="cn">
+    <button id="Previous"><a href="../C/cloops.html">Previous</a></button>
+    <button id="Next"><a href="../C/carray.html">Next</a></button>
+</div>
+
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Coding Tutorials. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
